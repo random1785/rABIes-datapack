@@ -7,7 +7,8 @@ Each objective is assigned a relative difficulty level (of course, it varies fro
 Players also have a maximum time limit of 10000 ticks, or 8 minutes and 20 seconds, to complete the objective. <br>
 The datapack lasts 10 rounds. A semi-complicated scoring system and method of determining the objective is also at play. <br>
 To remove the RNG aspect of trying to find specific structures or biomes, Chunkbase is allowed and strongly recommended. A macro that prints the x and z coordinates of the starting box is provided at the start of every round as well as multiple links to chunkbase (with the seed pre-typed). <br>
-A spreadsheet further explaining everything is avaliable \<link to come\>.
+A spreadsheet further explaining everything is avaliable \<link to come\>. <br>
+Players can redisplay the objective with `/trigger reminder` and can forefit the round with `/trigger zzzforefit`. 
 
 
 ## More technical stuff for myself
@@ -23,4 +24,5 @@ The macro also sometimes unpredictably fails, for whatever reason.<br>
 Golems are meant to be set to a health of 20 to avoid congestion and petty fighting in village spawns.<br>
 Wandering Traders and Pillager Patrol spawns are meant to be turned off to remove rare RNG that can give certain players an advantage.<br>
 Players currently can circumvent the scoring process by leaving the game as the scores are calculated.<br>
-Make players that join get a starting score of `150*round`. 
+Make players that join get a starting score of `150*round`. <br>
+Make forefitting only possible if the player runs the command twice within a second (or some other range) to prevent accidental forefits.
