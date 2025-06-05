@@ -3,17 +3,17 @@ execute as @e[scores={round=1,t=1,scoretick=1..}] run function a:zzzquartersec1
 
 
 #block
-execute as @e[scores={round=1,t=2,message=1..42,scoretick=1..}] run function a:zzzquartersec2
-execute as @e[scores={round=1,t=2,message=43..72,scoretick=1..}] run function a:zzzquartersec3
-execute as @e[scores={round=1,t=2,message=73..94,scoretick=1..}] run function a:zzzquartersec3a
-execute as @e[scores={round=1,t=2,message=95..139,scoretick=1..}] run function a:zzzquartersec4
-# execute as @e[scores={round=1,t=2,message=200..242,scoretick=1..}] run function a:zzzquartersec5
+execute as @e[scores={round=1,t=2,message=1..50,scoretick=1..}] run function a:zzzquartersec2
+execute as @e[scores={round=1,t=2,message=51..100,scoretick=1..}] run function a:zzzquartersec3
+execute as @e[scores={round=1,t=2,message=101..150,scoretick=1..}] run function a:zzzquartersec3a
+execute as @e[scores={round=1,t=2,message=151..200,scoretick=1..}] run function a:zzzquartersec4
+execute as @e[scores={round=1,t=2,message=200..242,scoretick=1..}] run function a:zzzquartersec5
 
 
 
 #item
-execute as @e[scores={t=3,round=1,message=1..28,scoretick=1..}] run function a:zzzquartersec6
-execute as @e[scores={t=3,round=1,message=29..49,scoretick=1..}] run function a:zzzquartersec7
+execute as @e[scores={t=3,round=1,message=1..35,scoretick=1..}] run function a:zzzquartersec6
+execute as @e[scores={t=3,round=1,message=36..74,scoretick=1..}] run function a:zzzquartersec7
 
 
 

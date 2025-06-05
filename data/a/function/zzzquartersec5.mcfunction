@@ -1,4 +1,68 @@
 
+execute as @e[scores={round=1,t=2,message=201}] run execute as @a at @s if block ~ ~-1 ~ minecraft:enchanting_table run scoreboard players add @s done 1
+execute as @e[scores={round=1,t=2,message=201}] run execute as @a at @s if block ~ ~ ~ minecraft:enchanting_table run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=202}] run execute as @a at @s if block ~ ~-1 ~ minecraft:magma_block run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=203}] run execute as @a at @s if block ~ ~-1 ~ minecraft:red_nether_bricks run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=204}] run execute as @a at @s if block ~ ~-1 ~ minecraft:sniffer_egg run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=205}] run execute as @a at @s if block ~ ~-1 ~ minecraft:blue_ice run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=206}] run execute as @a at @s if block ~ ~ ~ minecraft:comparator run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=207}] run execute as @a at @s if block ~ ~-1 ~ minecraft:slime_block run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=208}] run execute as @a at @s if block ~ ~-1 ~ minecraft:observer run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=209}] run execute as @a at @s if block ~ ~ ~ minecraft:daylight_detector run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=210}] run execute as @a at @s if block ~ ~ ~ minecraft:calibrated_sculk_sensor run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=211}] run execute as @a at @s if block ~ ~-1 ~ minecraft:redstone_lamp run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=212}] run execute as @a at @s if block ~ ~ ~ minecraft:cake run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=213}] run execute as @a at @s if block ~ ~-1 ~ minecraft:brewing_stand run scoreboard players add @s done 1
+execute as @e[scores={round=1,t=2,message=213}] run execute as @a at @s if block ~ ~ ~ minecraft:brewing_stand run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=214}] run execute as @a at @s if block ~ ~ ~ minecraft:soul_lantern run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=215}] run execute as @a at @s if block ~ ~ ~ minecraft:soul_campfire run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=216}] run execute as @a at @s if block ~ ~-1 ~ minecraft:smooth_quartz_slab run scoreboard players add @s done 1
+execute as @e[scores={round=1,t=2,message=216}] run execute as @a at @s if block ~ ~ ~ minecraft:smooth_quartz_slab run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=217}] run execute as @a at @s if block ~ ~-1 ~ minecraft:red_nether_brick_stairs run scoreboard players add @s done 1
+execute as @e[scores={round=1,t=2,message=217}] run execute as @a at @s if block ~ ~ ~ minecraft:red_nether_brick_stairs run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=218}] run execute as @a at @s if block ~ ~-1 ~ minecraft:quartz_pillar run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=219}] run execute as @a at @s if block ~ ~-1 ~ minecraft:quartz_bricks run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=220}] run execute as @a at @s if block ~ ~-1 ~ minecraft:polished_blackstone_slab run scoreboard players add @s done 1
+execute as @e[scores={round=1,t=2,message=220}] run execute as @a at @s if block ~ ~ ~ minecraft:polished_blackstone_slab run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=221}] run execute as @a at @s if block ~ ~-1 ~ minecraft:polished_blackstone_bricks run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=222}] run execute as @a at @s if block ~ ~-1 ~ minecraft:polished_blackstone run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=223}] run execute as @a at @s if block ~ ~-1 ~ minecraft:nether_brick_fence run scoreboard players add @s done 1
+execute as @e[scores={round=1,t=2,message=223}] run execute as @a at @s if block ~ ~ ~ minecraft:nether_brick_fence run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=224}] run execute as @a at @s if block ~ ~-1 ~ minecraft:gilded_blackstone run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=225}] run execute as @a at @s if block ~ ~-1 ~ minecraft:cracked_polished_blackstone_bricks run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=226}] run execute as @a at @s if block ~ ~-1 ~ minecraft:cracked_nether_bricks run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=227}] run execute as @a at @s if block ~ ~-1 ~ minecraft:chiseled_quartz_block run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=228}] run execute as @a at @s if block ~ ~-1 ~ minecraft:chiseled_polished_blackstone run scoreboard players add @s done 1
+
+execute as @e[scores={round=1,t=2,message=229}] run execute as @a at @s if block ~ ~-1 ~ minecraft:chiseled_nether_bricks run scoreboard players add @s done 1
+
 execute as @e[scores={round=1,t=2,message=230}] run execute as @a at @s if block ~ ~-1 ~ minecraft:pale_oak_planks run scoreboard players add @s done 1
 
 execute as @e[scores={round=1,t=2,message=231}] run execute as @a at @s if block ~ ~-1 ~ minecraft:crimson_planks run scoreboard players add @s done 1

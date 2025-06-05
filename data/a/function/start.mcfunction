@@ -12,9 +12,9 @@ scoreboard players set Round d1 2
 scoreboard players set Round d2 3
 scoreboard players set Round d3 3
 scoreboard players set Round d4 2
-scoreboard players set Round ta 2
+scoreboard players set Round ta 3
 scoreboard players set Round ti 4
-scoreboard players set Round tb 4
+scoreboard players set Round tb 3
 gamerule announceAdvancements true
 kill @e[type=armor_stand]
 summon minecraft:armor_stand 0 330 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["score","newcheck"]}

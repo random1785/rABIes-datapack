@@ -51,7 +51,8 @@ scoreboard objectives add glass minecraft.mined:minecraft.glass
 scoreboard players set @a death 1785
 scoreboard players set @a lobby 1785
 scoreboard objectives setdisplay sidebar score
-tellraw @a [{"text":"slightly less rabid","color":"gray","italic":true},{"italic":false,"text":" rABIes (Racing for ADVANCEMENTS, BLOCKS, and ITEMS Extremely Speedily) has been loaded! Use /function a:start to begin the acquisition of rabies :3","color":"green"}]
+tellraw @a {"text":"rABIes (Racing for ADVANCEMENTS, BLOCKS, and ITEMS Extremely Speedily) has been loaded! Use /function a:start to begin the acquisition of rabies :3","color":"green"}
+tellraw @a {"text":" [direct link to chunkbase]","color":"aqua","click_event":{"action":"open_url","url":"https://www.chunkbase.com/apps/seed-map#seed=1785"}}
 
 
 # create spawn platform
