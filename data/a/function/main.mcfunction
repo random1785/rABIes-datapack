@@ -51,14 +51,13 @@ scoreboard objectives add glass minecraft.mined:minecraft.glass
 scoreboard players set @a death 1785
 scoreboard players set @a lobby 1785
 scoreboard objectives setdisplay sidebar score
-tellraw @a {"text":"rABIes (Racing for ADVANCEMENTS, BLOCKS, and ITEMS Extremely Speedily) has been loaded! Use /function a:start to begin the acquisition of rabies :3","color":"green"}
-tellraw @a {"text":" [direct link to chunkbase]","color":"aqua","click_event":{"action":"open_url","url":"https://www.chunkbase.com/apps/seed-map#seed=1785"}}
+tellraw @a [{"text":"slightly less rabid","color":"gray","italic":true},{"italic":false,"text":" rABIes (Racing for ADVANCEMENTS, BLOCKS, and ITEMS Extremely Speedily) has been loaded! Use /function a:start to begin the acquisition of rabies :3","color":"green"}]
 
 
 # create spawn platform
-fill 10 300 10 -10 319 -10 minecraft:barrier hollow
-fill -9 319 -9 9 319 9 air
-fill -9 300 -9 9 300 9 minecraft:grass_block
+schedule function a:zzzspawn 5t
+execute in the_nether run forceload add -13 -14 25 24
+place template a:lobbyoverworld -12 295 -14
 setworldspawn 0 302 0
 spawnpoint @a 0 302 0
 forceload add -1 -1 0 0

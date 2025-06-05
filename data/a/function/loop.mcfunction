@@ -6,8 +6,12 @@ execute as @e[type=armor_stand,tag=newcheck] run execute as @a run execute unles
 
 effect give @a[scores={lobby=1..}] resistance 1 254 true
 effect give @a[scores={lobby=1..}] mining_fatigue 1 254 true
-effect give @a[x=-10,y=290,z=-10,dx=20,dy=20,dz=20] mining_fatigue 1 254 true
-effect give @a[x=-10,y=290,z=-10,dx=20,dy=20,dz=20] resistance 1 254 true
+execute positioned 12.79 308.35 0.70 run effect give @a[distance=..30] mining_fatigue 1 254 true
+execute positioned 12.79 308.35 0.70 run effect give @a[distance=..30] resistance 1 254 true
+execute positioned 22.41 309.99 0.39 run effect give @a[distance=..10] saturation 1 254 true
+execute in minecraft:the_nether positioned 11.08 129.00 4.82 run effect give @a[distance=..20] resistance 1 254 true
+execute in minecraft:the_nether positioned 11.08 129.00 4.82 run effect give @a[distance=..20] mining_fatigue 1 254 true
+execute in minecraft:the_nether positioned 11.08 129.00 4.82 run effect give @a[distance=..20] saturation 1 254 true
 scoreboard players add @e[type=armor_stand,tag=score,scores={round=1}] scoretick 1
 execute as @e[tag=score,type=armor_stand,scores={scoretick=-100..0}] run execute as @e[tag=start] at @s run execute as @a[gamemode=survival,distance=1..] run tellraw @a [{"selector":"@s","color":"red","bold":true},{"bold":false,"text":" was not in the starting box!"}]
 execute as @e[tag=score,type=armor_stand,scores={scoretick=-100..0}] run execute as @e[tag=start] at @s run execute as @a[gamemode=survival,distance=1..] run function a:zzzbotched
