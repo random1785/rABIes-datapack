@@ -21,5 +21,5 @@ xp set @a 0 levels
 xp set @a 0 points
 scoreboard players set @e[type=armor_stand,tag=score] place 0
 scoreboard players reset @a place
-scoreboard players set @a calc 60000
+scoreboard players set @a calc 12000
 scoreboard players set @e[type=armor_stand,tag=score] twok 2000
