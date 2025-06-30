@@ -74,6 +74,7 @@ execute as @a[scores={done=1..},tag=!a] run execute as @e[limit=1,type=minecraft
 gamemode spectator @a[scores={done=1..},tag=!a]
 scoreboard players operation @a[scores={done=1..},tag=!a] calc = @e[type=armor_stand,tag=score] scoretick
 tag @a[scores={done=1..},tag=!a] add a
+execute as @a[scores={done=1..}] run execute unless entity @a[gamemode=survival,scores={done=0,score=1..}] run function a:zzzdone
 
 
 

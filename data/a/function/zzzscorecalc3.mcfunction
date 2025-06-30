@@ -27,3 +27,5 @@ scoreboard players reset * temp
 scoreboard objectives setdisplay sidebar score
 
 scoreboard players reset @a glass
+
+execute as @a[scores={score=58215}] run tellraw @a {"color":"dark_purple","text":"You just discovered the funniest bug in existence! I have no idea why it happens, but don't worry, I fix it right after..."}

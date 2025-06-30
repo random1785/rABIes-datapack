@@ -7,7 +7,10 @@ scoreboard players set @a done 0
 tp @a 0 301 0
 gamerule doImmediateRespawn true
 gamerule announceAdvancements true
+gamerule doPatrolSpawning false
+gamerule doTraderSpawning false
 gamerule spawnRadius 2
+gamerule keepInventory false
 difficulty easy
 time set 0
 team add a
@@ -47,6 +50,8 @@ scoreboard objectives add tb dummy
 scoreboard objectives add place dummy
 scoreboard objectives add rounds dummy
 scoreboard objectives add twok dummy
+scoreboard objectives add newscore dummy
+scoreboard objectives add onefifty dummy
 scoreboard objectives add glass minecraft.mined:minecraft.glass
 scoreboard players set @a death 1785
 scoreboard players set @a lobby 1785
@@ -58,7 +63,7 @@ tellraw @a {"text":" [direct link to chunkbase]","color":"aqua","click_event":{"
 # create spawn platform
 schedule function a:zzzspawn 5t
 execute in the_nether run forceload add -13 -14 25 24
-place template a:lobbyoverworld -12 295 -14
+place template a:lobbyoverworld1 -12 295 -14
 setworldspawn 0 302 0
 spawnpoint @a 0 302 0
 forceload add -1 -1 0 0

@@ -9,12 +9,14 @@ effect give @a[scores={lobby=1..}] mining_fatigue 1 254 true
 execute positioned 12.79 308.35 0.70 run effect give @a[distance=..30] mining_fatigue 1 254 true
 execute positioned 12.79 308.35 0.70 run effect give @a[distance=..30] resistance 1 254 true
 execute positioned 22.41 309.99 0.39 run effect give @a[distance=..10] saturation 1 254 true
-execute in minecraft:the_nether positioned 11.08 129.00 4.82 run effect give @a[distance=..20] resistance 1 254 true
-execute in minecraft:the_nether positioned 11.08 129.00 4.82 run effect give @a[distance=..20] mining_fatigue 1 254 true
-execute in minecraft:the_nether positioned 11.08 129.00 4.82 run effect give @a[distance=..20] saturation 1 254 true
+execute in minecraft:the_nether positioned 11.08 159.00 4.82 run effect give @a[distance=..60] resistance 1 254 true
+execute in minecraft:the_nether positioned 11.08 159.00 4.82 run effect give @a[distance=..60] mining_fatigue 1 254 true
+execute in minecraft:the_nether positioned 11.08 159.00 4.82 run effect give @a[distance=..60] saturation 1 254 true
+execute in minecraft:the_nether positioned 11.08 159.00 4.82 run tp @e[type=enderman,distance=..60,tag=!end] ~ 0 ~
+execute in minecraft:the_nether positioned 11.08 159.00 4.82 run tag @e[type=enderman,distance=..60,tag=!end] add end
 scoreboard players add @e[type=armor_stand,tag=score,scores={round=1}] scoretick 1
-execute as @e[tag=score,type=armor_stand,scores={scoretick=-100..0}] run execute as @e[tag=start] at @s run execute as @a[gamemode=survival,distance=1..] run tellraw @a [{"selector":"@s","color":"red","bold":true},{"bold":false,"text":" was not in the starting box!"}]
-execute as @e[tag=score,type=armor_stand,scores={scoretick=-100..0}] run execute as @e[tag=start] at @s run execute as @a[gamemode=survival,distance=1..] run function a:zzzbotched
+execute as @e[tag=score,type=armor_stand,scores={scoretick=-160..0}] run execute as @e[tag=start] at @s run execute as @a[gamemode=survival,distance=1..] run tag @s add botch
+execute as @e[tag=score,type=armor_stand,scores={scoretick=-160..0}] run execute as @e[tag=start] at @s run execute as @a[gamemode=survival,distance=1..] run function a:zzzbotched
 
 execute as @e[type=armor_stand,scores={scoretick=0..10}] at @a run fill ~-3 ~-3 ~-3 ~3 ~3 ~3 air replace glass
 tag @a[tag=!new] add new
@@ -22,7 +24,7 @@ team join a @a[tag=!new]
 
 
 # round is over calculations
-execute as @a[scores={done=1..}] run execute unless entity @a[gamemode=survival,scores={done=0,score=1..}] run function a:zzzdone
+# execute as @a[scores={done=1..}] run execute unless entity @a[gamemode=survival,scores={done=0,score=1..}] run function a:zzzdone
 
 
 # player timer 
@@ -123,3 +125,8 @@ execute as @e[type=minecraft:armor_stand,tag=score,scores={scoretick=-199}] at @
 execute as @e[type=minecraft:armor_stand,tag=score,scores={scoretick=-19}] at @s if entity @a[distance=..35,gamemode=survival] run function a:zzzbotched
 # glass break detection
 execute as @e[type=minecraft:armor_stand,tag=score,scores={scoretick=-240..-1}] at @s if entity @a[scores={glass=1..}] run function a:zzzglass
+
+
+# make golems weak
+execute as @e[type=iron_golem,tag=!weak] run attribute @s minecraft:max_health base set 20
+tag @e[type=iron_golem,tag=!weak] add weak
